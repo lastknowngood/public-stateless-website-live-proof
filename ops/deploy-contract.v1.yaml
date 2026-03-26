@@ -1,0 +1,53 @@
+contract_version: v1
+
+lifecycle:
+  mode: live
+
+project:
+  name: public-stateless-website-live-proof
+  owner: ops-live-proof
+  repository_url: http://100.87.1.46:18080/public-stateless-website-live-proof.git
+
+target:
+  platform_class: coolify-single-host-v1
+  host_label: coolify-01
+  environment: production
+
+exposure:
+  mode: public
+  domains:
+    - website-live-proof.example.invalid
+
+coolify:
+  app_type: dockerfile
+  resource_name: public-stateless-website-live-proof
+  project_name: live-proof-tests
+
+build:
+  source_type: git
+  source_ref: main
+  runtime_notes: Static site served from nginx:alpine on the container default HTTP port.
+
+state:
+  stateful: false
+  data_paths: []
+  storage_class: none
+
+dependencies:
+  database: none
+  cache: none
+  object_storage: none
+
+secrets:
+  source_of_truth: none
+  required_secret_names: []
+
+operations:
+  healthcheck: GET /
+  rollback_hint: Redeploy the previous Git commit or previous working image for the same Dockerfile app.
+  backup_class: stateless
+
+notes:
+  - Temporary live proof only.
+  - Default retention policy is cleanup after evidence capture.
+  - No database and no runtime secrets.
