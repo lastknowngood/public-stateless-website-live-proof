@@ -6,7 +6,7 @@ lifecycle:
 project:
   name: public-stateless-website-live-proof
   owner: ops-live-proof
-  repository_url: http://100.87.1.46:18080/public-stateless-website-live-proof.git
+  repository_url: https://rtx5090.tail278d58.ts.net/public-stateless-website-live-proof.git
 
 target:
   platform_class: coolify-single-host-v1
