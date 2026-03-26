@@ -30,14 +30,23 @@ Es ist **nicht**:
 - Repo-/Contract-Ebene: sauber
 - Coolify-Runtime-Ebene: aktuell blockiert
 
+Die kanonische Git-Quelle fuer dieses Repo ist jetzt:
+
+- `https://github.com/lastknowngood/public-stateless-website-live-proof.git`
+
 Der erste echte Deploy-Versuch gegen `coolify-01` ist nicht an Docker, nicht am
 Dockerfile und nicht an stateless Defaults gescheitert, sondern bereits an der
-Git-Quelle:
+frueheren temporaren Tailnet-Git-Quelle:
 
-- verwendete Test-Quelle:
+- frueher verwendete Test-Quelle:
   `https://rtx5090.tail278d58.ts.net/public-stateless-website-live-proof.git`
 - Befund im Coolify-Build-Helfer:
   `Could not resolve host: rtx5090.tail278d58.ts.net`
 
 Das Repo bleibt damit ein valider test-only Beweisfall fuer den Git-basierten
 Pfad, aber noch kein erfolgreich runtime-validiertes Live-Projekt.
+
+Naechster geplanter Schritt:
+
+- Retry des Live-Proofs gegen die GitHub-Quelle statt gegen den frueheren
+  Tailnet-Remote
