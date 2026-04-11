@@ -11,11 +11,11 @@ Projektpfad auf `coolify-01`.
 - Coolify `dockerfile`
 - keine Datenbank
 - keine Runtime-Secrets
-- test-only und standardmaessig fuer spaeteres Cleanup gedacht
+- test-only Proof, Cleanup abgeschlossen
 
 ## Zweck
 
-Dieses Repo ist kein kanonisches Beispiel, sondern ein realer temporarer
+Dieses Repo ist kein kanonisches Beispiel, sondern der ausgefuehrte reale
 Beweisfall dafuer, dass aus dem validierten stateless Website-Pfad auf
 `coolify-01` wirklich eine laufende Coolify-App entstehen kann.
 
@@ -25,28 +25,48 @@ Es ist **nicht**:
 - ein Host-Runbook
 - die wiederverwendbare kanonische Vorlage
 
-## Aktueller Runtime-Status
+## Aktueller Zustand
 
-- Repo-/Contract-Ebene: sauber
-- Coolify-Runtime-Ebene: aktuell blockiert
+- historischer Proof: erfolgreich
+- Cleanup: abgeschlossen
+- retained Runtime: nein
+- retained DNS: nein
+- verwendete historische Testdomain:
+  - `agent-drill.dental-school.education`
 
-Die kanonische Git-Quelle fuer dieses Repo ist jetzt:
+Der fruehere blockierte Tailnet-Git-Quellenpfad wurde spaeter durch die
+GitHub-Quelle ersetzt und der oeffentliche HTTPS-Proof erfolgreich
+abgeschlossen. Die detaillierte Chronologie und Cleanup-Evidence bleibt im
+Host-Repo unter `docs/provisioning-log/`.
 
-- `https://github.com/lastknowngood/public-stateless-website-live-proof.git`
+## Lokale Entwicklung
 
-Der erste echte Deploy-Versuch gegen `coolify-01` ist nicht an Docker, nicht am
-Dockerfile und nicht an stateless Defaults gescheitert, sondern bereits an der
-frueheren temporaren Tailnet-Git-Quelle:
+- statische Dateien und `Dockerfile` bleiben klein
+- vor einem erneuten Proof den Contract und Host-Runbook-Stand im Host-Repo
+  pruefen
+- wenn Docker lokal verfuegbar ist, vor Deploy einen kleinen Image-Smoke fahren
 
-- frueher verwendete Test-Quelle:
-  `https://rtx5090.tail278d58.ts.net/public-stateless-website-live-proof.git`
-- Befund im Coolify-Build-Helfer:
-  `Could not resolve host: rtx5090.tail278d58.ts.net`
+## Laufzeitverhalten
 
-Das Repo bleibt damit ein valider test-only Beweisfall fuer den Git-basierten
-Pfad, aber noch kein erfolgreich runtime-validiertes Live-Projekt.
+- statische Nginx-Seite
+- sichtbarer Proof-Marker
+- `robots.txt`
+- HTML-`noindex`
+- `X-Robots-Tag`
+- keine Datenbank
+- keine Runtime-Secrets
 
-Naechster geplanter Schritt:
+## Proof-Status
 
-- Retry des Live-Proofs gegen die GitHub-Quelle statt gegen den frueheren
-  Tailnet-Remote
+- privater Readiness-Pfad: erfolgreich
+- oeffentlicher HTTPS-Proof: erfolgreich
+- Cleanup: erfolgreich
+
+## Reale Evidence
+
+- Host-Chronologie:
+  - `docs/provisioning-log/2026-03.md`
+- historischer FQDN:
+  - `agent-drill.dental-school.education`
+- dieses Repo bleibt historische Remote-Wahrheit fuer den ausgefuehrten
+  stateless Public-Proof, nicht der Steady State eines laufenden Dienstes

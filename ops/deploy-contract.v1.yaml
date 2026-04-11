@@ -16,7 +16,7 @@ target:
 exposure:
   mode: public
   domains:
-    - website-live-proof.example.invalid
+    - agent-drill.dental-school.education
 
 coolify:
   app_type: dockerfile
@@ -48,6 +48,7 @@ operations:
   backup_class: stateless
 
 notes:
-  - Temporary live proof only.
-  - Default retention policy is cleanup after evidence capture.
+  - Temporary live proof only; cleanup is complete.
+  - Historical public proof domain was agent-drill.dental-school.education.
+  - Current steady state is historical proof only; no retained DNS and no retained runtime resources.
   - No database and no runtime secrets.

@@ -1,0 +1,57 @@
+.env
+.env.*
+!.env.example
+node_modules/
+coverage/
+dist/
+build/
+.tmp/
+*.log
+.ssh/
+.hcloud/
+.config/hcloud/
+secrets/
+secret/
+keys/
+*.pem
+*.key
+*.ppk
+*.pfx
+*.p12
+*.token
+*.session
+chrome-profile/
+browser-profile/
+firefox-profile/
+.mozilla/
+User Data/
+Chrome/User Data/
+Edge/User Data/
+Default/Sessions/
+Default/Session Storage/
+Default/Local Storage/
+Default/IndexedDB/
+Default/Network/
+Default/Sync Data/
+Default/Local Extension Settings/
+Default/Extension State/
+Default/Service Worker/
+Default/Code Cache/
+Default/GPUCache/
+Default/blob_storage/
+Default/File System/
+Default/databases/
+Profile */Sessions/
+Profile */Session Storage/
+Profile */Local Storage/
+Profile */IndexedDB/
+Profile */Network/
+Profile */Sync Data/
+Profile */Local Extension Settings/
+Profile */Extension State/
+Profile */Service Worker/
+Profile */Code Cache/
+Profile */GPUCache/
+Profile */blob_storage/
+Profile */File System/
+Profile */databases/
