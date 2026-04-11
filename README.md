@@ -27,6 +27,8 @@ Es ist **nicht**:
 
 ## Aktueller Zustand
 
+Klarstellung: `lifecycle.mode: live` beschreibt hier die Proof-/Deploy-Contract-Klasse. Ob aus diesem Repo aktuell ein Dienst, DNS oder Host-Ressourcen retained sind, steht in den folgenden Bulletpoints und in den `notes` des Deploy-Contracts.
+
 - historischer Proof: erfolgreich
 - Cleanup: abgeschlossen
 - retained Runtime: nein
