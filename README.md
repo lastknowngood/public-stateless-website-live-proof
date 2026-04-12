@@ -3,6 +3,17 @@
 Temporarer test-only Live-Proof fuer den bisher validierten einfachsten
 Projektpfad auf `coolify-01`.
 
+## Kurzstatus
+
+| Feld | Stand |
+|---|---|
+| Contract-Klasse | `lifecycle.mode: live`, historischer stateless Public-Proof |
+| Aktuelle Runtime | keine retained Runtime |
+| Aktuelles DNS | kein retained DNS fuer `agent-drill.dental-school.education` |
+| Retained Ressourcen | keine |
+| Docs-/Source-Ref | `main` traegt heute die Doku-Wahrheit; exakter historischer Runtime-Commit wurde in diesem Pass nicht neu etabliert |
+| Evidence-Locator | Host-Repo `docs/provisioning-log/2026-03.md`, Eintrag `2026-03-28: Frischer scored Mini-Agent...`, plus `docs/projects/index.md` |
+
 ## Charakter
 
 - `lifecycle.mode: live`
